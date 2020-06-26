@@ -9,9 +9,12 @@ func main() {
 
 	handDeck.print()
 
-	fmt.Println(toString(handDeck))
+	fmt.Println(handDeck.toString())
 
-	/* fmt.Println("------")
+	handDeck.saveIt("./foo.txt")
 
-	otherCards.print() */
+	loadedDeck := loadIt("./foo2.txt")
+	loadedDeck.print()
+
+	(loadedDeck.shuffle()).print()
 }
